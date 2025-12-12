@@ -1,0 +1,17 @@
+streamlit
+pandas
+numpy
+requests
+newsapi-python        # if using NewsAPI (replace with feedparser if using RSS)
+newspaper3k           # content extraction (optional)
+transformers
+torch                 # CPU; if you prefer lighter, replace with vaderSentiment/textblob
+vaderSentiment
+scikit-learn
+plotly
+groq
+python-dotenv
+duckdb                 # optional
+yfinance               # optional, for price correlation
+reportlab
+matplotlib

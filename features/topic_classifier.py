@@ -1,5 +1,6 @@
-from typing import List, Optional
+from typing import List, Optional, Dict
 import pandas as pd
+import hashlib
 
 _pipeline = None
 _pipeline_model_name = None

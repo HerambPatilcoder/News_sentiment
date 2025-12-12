@@ -49,7 +49,7 @@ def classify_df_articles_auto(
     model_name: str = "facebook/bart-large-mnli",
     candidate_labels: Optional[List[str]] = None,
     batch_size: int = 32,
-    dedupe bool : True,
+    dedupe: bool = True,
 ) -> pd.DataFrame:
     """
     Automatically classify articles in df and return a copy with

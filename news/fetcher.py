@@ -3,6 +3,7 @@ import time
 import requests
 from datetime import datetime, timedelta
 import pandas as pd
+import streamlit as st
 
 NEWSAPI_ENDPOINT = "https://newsapi.org/v2/everything"
 
@@ -11,7 +12,7 @@ def fetch_news_newsapi(query, from_dt, to_dt, page_size=100, api_key=None, max_p
     query: search string (e.g., 'Apple OR AAPL')
     from_dt, to_dt: ISO date strings 'YYYY-MM-DD'
     """
-    api_key = api_key or os.getenv("NEWSAPI_KEY")
+    api_key = api_key or st.secrets["NEWSAPI_KEY"]
     if not api_key:
         raise RuntimeError("NEWSAPI_KEY not set (env or streamlit secrets).")
 
